@@ -1,0 +1,298 @@
+body {
+    background-color: black;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.wrapper {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 17ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3vw;
+    color: greenyellow
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+        fill: hsl(189, 68%, 75%)
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -20%;
+        fill: hsla(189, 68%, 75%, 0%)
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 25%;
+    height: 6vh;
+    text-align: center;
+    margin-bottom: 1vh;
+    opacity: 0.8;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ff0000;
+    text-align: center;
+    padding-left: 2vw;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: greenyellow;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+/* 
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+a span {
+    vertical-align: middle;
+} */
+
+#About {
+    width: 70%;
+    margin: 1px solid black;
+    background-color: #e3e3e3;
+    height: 80vh;
+    margin-left: 15%;
+    border-radius: 25px;
+    box-shadow: 8px 10px 30px #888888;
+}
+
+#about-text {
+    width: 75%;
+    margin-left: 12%;
+    font-size: 2vw;
+}
+
+#about-heading {
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+#Projects {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 25px;
+    height: 40vh;
+    background-color: #e3e3e3;
+}
+
+#projects-heading {
+    text-align: center;
+    font-size: 3vw;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+#projects-text {
+    font-size: 2vw;
+    text-align: center;
+}
+
+#Skills {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 25px;
+    height: 70vh;
+    background-color: #e3e3e3;
+}
+
+#skills-heading {
+    text-align: center;
+    font-size: 3vw;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+#skills-grid {
+    display: grid;
+    grid-row-gap: 5vw;
+    grid-column-gap: 2vw;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    margin-left: 20%;
+}
+
+.skill-item {
+    font-size: 8vw;
+}
+
+.fa-html5 {
+    color: #e34c26
+}
+
+.fa-css3-alt {
+    color: #264de4
+}
+
+.fa-js-square {
+    color: #F0DB4F;
+}
+
+.fa-node {
+    color: #3c873a;
+}
+
+.fa-java {
+    color: #f89820
+}
+
+.fa-cuttlefish {
+    color: #5E97D0;
+}
+
+#Experience {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 25px;
+    height: 80vh;
+    align-items: center;
+    background-color: #e3e3e3;
+}
+
+#experience-heading {
+    text-align: center;
+    font-size: 3vw;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+#exp-container {
+    width: 75%;
+    margin-left: 12%;
+    font-size: 2vw;
+}
+
+#Connect {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 25px;
+    height: 60vh;
+    background-color: #e3e3e3;
+}
+
+#connect-heading {
+    text-align: center;
+    font-size: 3vw;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px black;
+}
+
+#connect-text {
+    font-size: 2vw;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#connect-icons {
+    width: 70%;
+    padding-left: 38%;
+}
+
+.fa-facebook-f {
+    margin-left: 7%;
+    font-size: 2vw;
+    color: #3b5998
+}
+
+.fa-linkedin-in {
+    margin-left: 7%;
+    font-size: 2vw;
+    color: #0e76a8
+}
+
+.fa-github {
+    margin-left: 7%;
+    font-size: 2vw;
+    color: #74369e
+}
+
+#mail {
+    padding-left: 40%;
+    font-size: 1.4vw;
+}
+
+#dp {
+    width: 15vw;
+    border-radius: 50%;
+    margin-left: 38%;
+}
+
+.ball {
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0.5;
+}
