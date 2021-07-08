@@ -133,6 +133,7 @@ a span {
     width: 75%;
     margin-left: 12%;
     font-size: 2vw;
+    color:white;
 }
 
 #about-heading {
@@ -162,6 +163,7 @@ a span {
 #projects-text {
     font-size: 2vw;
     text-align: center;
+    color:white;
 }
 
 #Skills {
@@ -236,6 +238,7 @@ a span {
     width: 75%;
     margin-left: 12%;
     font-size: 2vw;
+    color:white;
 }
 
 #Connect {
@@ -257,6 +260,7 @@ a span {
     font-size: 2vw;
     margin-left: 15%;
     margin-right: 15%;
+    color:white;
 }
 
 #connect-icons {
